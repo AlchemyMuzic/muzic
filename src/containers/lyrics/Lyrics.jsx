@@ -1,10 +1,9 @@
 import React from 'react';
 
-export default function Search() {
+export default function Lyrics() {
   return (
     <div>
-            Search Container
+        Lyrics Container
     </div>
   );
 }
-

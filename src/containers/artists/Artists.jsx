@@ -1,10 +1,9 @@
 import React from 'react';
 
-export default function Search() {
+export default function Artists() {
   return (
     <div>
-            Search Container
+        Artists Container
     </div>
   );
 }
-

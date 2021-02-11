@@ -1,10 +1,9 @@
 import React from 'react';
 
-export default function Search() {
+export default function Releases() {
   return (
     <div>
-            Search Container
+        Releases Component
     </div>
   );
 }
-
