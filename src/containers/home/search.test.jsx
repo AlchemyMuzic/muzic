@@ -5,7 +5,7 @@ import { rest } from 'msw';
 import { setupServer } from 'msw/node';
 import MockData from '../../data/MockData.json';
 import { MemoryRouter } from 'react-router-dom';
-import Search from './Search';
+import Search from './Home';
 
 const server = setupServer(
   rest.get('http://musicbrainz.org/ws/2/artist?query=madonna&fmt=json&limit=25', (req, res, ctx) => {

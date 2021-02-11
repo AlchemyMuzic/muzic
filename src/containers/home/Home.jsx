@@ -1,9 +1,9 @@
 import React from 'react';
-import ArtistList from '../../components/search/ArtistList';
+import ArtistList from '../../components/home/ArtistList';
 import { useArtistList } from '../../services/hooks/useArtistList';
-import SearchInput from '../../components/search/SearchInput';
+import SearchInput from '../../components/home/SearchInput';
 
-const Search = () => {
+const Home = () => {
   const { loading, artists, setSearch } = useArtistList();
 
   if(loading) return <h1>Loading</h1>;
@@ -13,4 +13,4 @@ const Search = () => {
   </div>;
 };
 
-export default Search;
+export default Home;
