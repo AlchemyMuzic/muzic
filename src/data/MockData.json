@@ -1,0 +1,70 @@
+{
+    "created": "2021-02-11T21:30:43.420Z",
+    "count": 49,
+    "offset": 0,
+    "artists": [
+    {},
+    {
+    "id": "3fd13140-6857-489a-9e53-a4e112b8354b",
+    "type": "Person",
+    "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+    "score": 83,
+    "gender-id": "93452b5a-a947-30c8-934f-6a4056b151c2",
+    "name": "Madonna",
+    "sort-name": "Madonna",
+    "gender": "female",
+    "country": "LB",
+    "area": {
+    "id": "8138206e-5786-3f86-a53b-19a7303e7419",
+    "type": "Country",
+    "type-id": "06dd0ae4-8c74-30bb-b43d-95dcedf961de",
+    "name": "Lebanon",
+    "sort-name": "Lebanon",
+    "life-span": {
+    "ended": null
+    }
+    },
+    "disambiguation": "Lebanese singer",
+    "life-span": {
+    "ended": null
+    }
+    },
+    {
+    "id": "a03e6851-a046-4599-85f0-5977905f8e8a",
+    "type": "Person",
+    "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+    "score": 72,
+    "gender-id": "93452b5a-a947-30c8-934f-6a4056b151c2",
+    "name": "Madonna Nash",
+    "sort-name": "Nash, Madonna",
+    "gender": "female",
+    "country": "US",
+    "area": {
+    "id": "489ce91b-6658-3307-9877-795b68554c98",
+    "type": "Country",
+    "type-id": "06dd0ae4-8c74-30bb-b43d-95dcedf961de",
+    "name": "United States",
+    "sort-name": "United States",
+    "life-span": {
+    "ended": null
+    }
+    },
+    "life-span": {
+    "ended": null
+    }
+    },
+    {
+    "id": "ccf25bc1-0864-4b90-bb26-9e74c187975e",
+    "type": "Group",
+    "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+    "score": 71,
+    "name": "Fortress Madonna",
+    "sort-name": "Fortress Madonna",
+    "life-span": {
+    "ended": null
+    }
+    }
+
+    ]
+}
+    

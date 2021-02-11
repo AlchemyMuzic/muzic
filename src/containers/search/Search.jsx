@@ -1,18 +1,16 @@
 import React from 'react';
+import ArtistList from '../../components/search/ArtistList';
+import { useArtistList } from '../../services/hooks/useArtistList';
+import SearchInput from '../../components/search/SearchInput';
 
-export default function Search() {
-  // STATE:
-  //const [searchTerm, setSearchTerm] = useState('');
-  // const [loading, setLoading] = useState(false);
+const Search = () => {
+  const { loading, artists, setSearch } = useArtistList();
 
-  return (
-    <div>
-      (Search Container)
-      Search: <input type="text"/>
-      <p>
-        Search Results:
-        {/* <SearchDetails /> */}
-      </p>
-    </div>
-  );
-}
+  if(loading) return <h1>Loading</h1>;
+  return <div>
+    <SearchInput setSearch={setSearch}/> 
+    <ArtistList artists={artists} />
+  </div>;
+};
+
+export default Search;
