@@ -4,7 +4,7 @@ import {
   Route, 
   Switch
 } from 'react-router-dom';
-import Search from '../search/Search';
+import Search from '../../containers/search/Search';
 
 export default function App() {
   return (
