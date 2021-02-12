@@ -1,22 +1,22 @@
+/* eslint-disable max-len */
 import React from 'react';
 import PropTypes from 'prop-types';
-import ArtistDetails from '../../components/artist/ArtistDetails';
+import ArtistAlbumDetails from '../../components/artistAlbumPre/ArtistAlbumDetails';
 import Loading from '../../components/loading/Loading';
 import { useArtistId } from '../../services/hooks/useArtistId';
 
-export default function Artist({ match }) {
+export default function ArtistAlbum({ match }) {
   const { loading, releases } = useArtistId(match.params.id);
-  console.log(match);
 
   if(loading) return <Loading />;
   return (
     <div>
-      <ArtistDetails releases={releases} />
+      <ArtistAlbumDetails releases={releases} />
     </div>
   );
 }
 
-Artist.propTypes = {
+ArtistAlbum.propTypes = {
   match: PropTypes.shape({
     params: PropTypes.shape({
       id: PropTypes.string.isRequired

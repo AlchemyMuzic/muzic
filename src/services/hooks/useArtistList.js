@@ -13,8 +13,6 @@ export const useArtistList = () => {
         setLoading(false);
       });
   }, [search]);
-  
-  // add a piece of state. 
 
   return {
     loading,
