@@ -1,7 +1,7 @@
 import React from 'react';
-import ArtistList from '../../components/home/ArtistList';
+import ArtistList from '../../components/artistListHomePre/ArtistList';
 import { useArtistList } from '../../services/hooks/useArtistList';
-import SearchInput from '../../components/home/SearchInput';
+import SearchInput from '../../components/artistListHomePre/SearchInput';
 import Loading from '../../components/loading/Loading';
 
 const Home = () => {

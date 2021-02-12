@@ -18,3 +18,12 @@ export const getReleasesByArtistId = (id) => {
       album: release.title,
     })));
 };
+
+// http://musicbrainz.org/ws/2/recording?release=<RELEASE_ID>&fmt=json
+export const getSongsByReleaseId = (id) => {
+  return fetch(`http://musicbrainz.org/ws/2/recording?release=${id}&fmt=json`)
+    .then(res => res.json())
+    .then(({ recordings }) => recordings.map(song => ({
+      title: song.title
+    })));
+};

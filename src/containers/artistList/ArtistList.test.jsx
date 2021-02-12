@@ -5,7 +5,7 @@ import { rest } from 'msw';
 import { setupServer } from 'msw/node';
 import MockData from '../../data/MockData.json';
 import { MemoryRouter } from 'react-router-dom';
-import Search from './Home';
+import ArtistList from './ArtistList';
 
 const server = setupServer(
   rest.get('http://musicbrainz.org/ws/2/artist?query=madonna&fmt=json&limit=25', (req, res, ctx) => {
@@ -13,7 +13,7 @@ const server = setupServer(
   })
 );
 
-describe('Search Container with Mock Data and mock server interceptor', () => {
+describe('Artist list container with MockData and mock server interceptor', () => {
   // starts and ends mock server for tests 
   beforeAll(() => server.listen());
   afterAll(() => server.close());
@@ -24,11 +24,9 @@ describe('Search Container with Mock Data and mock server interceptor', () => {
     render(
       // mock router to check and see if we are rendering characterslist
       <MemoryRouter>
-        <Search match={{ params:{ name:'Madonna' } }}/>
+        <ArtistList match={{ params:{ name:'Madonna' } }}/>
       </MemoryRouter>
     );
-
-    // ------------------------------------------------------------
 
     // grabs alt text for loading 
     screen.getByText('Loading');
