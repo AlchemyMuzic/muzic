@@ -6,6 +6,7 @@ import { useArtistId } from '../../services/hooks/useArtistId';
 
 export default function Artist({ match }) {
   const { loading, releases } = useArtistId(match.params.id);
+  console.log(match);
 
   if(loading) return <Loading />;
   return (

@@ -9,7 +9,7 @@ export default function ArtistDetails({ releases }) {
       <Link to={`/releases/${release.id}`}>
         <h2>{release.album}</h2>
         <img
-          src={`http://coverartarchive.org/release/${release.id}/front`}
+          src={`http://coverartarchive.org/release/${release.release_id}/front`}
           alt="release.album"/>
       </Link>
     </li>
