@@ -14,8 +14,6 @@ const server = setupServer(
   })
 );
 
-// ---------------------------------------------------------------
-
 describe('Artist Album Container with Mock Data and mock server interceptor', () => {
   // starts and ends mock server for tests 
   beforeAll(() => server.listen());
