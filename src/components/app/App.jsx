@@ -4,6 +4,7 @@ import {
   Route, 
   Switch
 } from 'react-router-dom';
+import Artist from '../../containers/artist/Artist';
 import Home from '../../containers/home/Home';
 
 export default function App() {
@@ -11,6 +12,7 @@ export default function App() {
     <Router>
       <Switch>
         <Route exact path="/" component={Home} />
+        <Route exact path="/releases/:artistId" component={Artist} />
       </Switch>
     </Router>
   );

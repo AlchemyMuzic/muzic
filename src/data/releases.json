@@ -1,0 +1,87 @@
+{
+    "release-count": 943,
+    "releases": [
+    {
+    "barcode": "",
+    "release-events": [
+    {
+    "area": {
+    "name": "United States",
+    "type-id": null,
+    "type": null,
+    "sort-name": "United States",
+    "id": "489ce91b-6658-3307-9877-795b68554c98",
+    "iso-3166-1-codes": [
+    "US"
+    ],
+    "disambiguation": ""
+    },
+    "date": "1982-10-06"
+    }
+    ],
+    "packaging": "Cardboard/Paper Sleeve",
+    "date": "1982-10-06",
+    "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+    "id": "1088500f-43b7-4c5a-a873-613bcc92c6a3",
+    "title": "Everybody",
+    "country": "US",
+    "packaging-id": "f7101ce3-0384-39ce-9fde-fbbd0044d35f",
+    "status": "Official",
+    "quality": "normal",
+    "cover-art-archive": {
+    "back": true,
+    "front": true,
+    "darkened": false,
+    "artwork": true,
+    "count": 4
+    },
+    "asin": null,
+    "text-representation": {
+    "language": "eng",
+    "script": "Latn"
+    },
+    "disambiguation": ""
+    },
+    {
+    "barcode": null,
+    "release-events": [
+    {
+    "date": "1983",
+    "area": {
+    "name": "United States",
+    "type-id": null,
+    "type": null,
+    "id": "489ce91b-6658-3307-9877-795b68554c98",
+    "sort-name": "United States",
+    "iso-3166-1-codes": [
+    "US"
+    ],
+    "disambiguation": ""
+    }
+    }
+    ],
+    "date": "1983",
+    "packaging": null,
+    "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+    "id": "121f1ee2-102b-4115-ad48-b5f51184dca2",
+    "title": "Holiday",
+    "country": "US",
+    "packaging-id": null,
+    "status": "Official",
+    "cover-art-archive": {
+    "back": false,
+    "front": false,
+    "darkened": false,
+    "count": 0,
+    "artwork": false
+    },
+    "quality": "normal",
+    "asin": null,
+    "text-representation": {
+    "script": "Latn",
+    "language": "eng"
+    },
+    "disambiguation": ""
+    }
+]
+}
