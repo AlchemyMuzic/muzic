@@ -1,13 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 export default function ArtistAlbumDetails({ releases }) {
-
+  const { name } = useParams();
   const releasesElements = releases.map(release => (
 
     <li key={release.release_id}>
-      <Link to={`/songs/${release.release_id}`}>
+      <Link to={`/songs/${release.release_id}/${name}`}>
         <h2>{release.album}</h2>
         <img
           src={`http://coverartarchive.org/release/${release.release_id}/front`}

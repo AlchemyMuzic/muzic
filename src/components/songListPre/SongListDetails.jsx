@@ -1,12 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 export default function SongListDetails({ songs }) {
+  const { name } = useParams();
 
   const songElements = songs.map(song => (
     <li key={song.title}>
-      <Link to={`/songs/${song.id}`}>
+      <Link to={`/recordings/${name}/${song.title}`}>
         <h2>{song.title}</h2>
       </Link>
     </li>
