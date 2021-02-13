@@ -8,7 +8,7 @@ import { MemoryRouter } from 'react-router-dom';
 import ArtistList from './ArtistList';
 
 const server = setupServer(
-  rest.get('http://musicbrainz.org/ws/2/artist?query=madonna&fmt=json&limit=25', (req, res, ctx) => {
+  rest.get('https://musicbrainz.org/ws/2/artist?query=madonna&fmt=json&limit=25', (req, res, ctx) => {
     return res(ctx.json(MockData));
   })
 );
@@ -17,14 +17,14 @@ describe('Artist list container with MockData and mock server interceptor', () =
   // starts and ends mock server for tests 
   beforeAll(() => server.listen());
   afterAll(() => server.close());
-  
+
   // ------------------------------------------------------------
 
-  it('displays a list of Madonna Artists', async() => {
+  it('displays a list of Madonna Artists', async () => {
     render(
       // mock router to check and see if we are rendering characterslist
       <MemoryRouter>
-        <ArtistList match={{ params:{ name:'Madonna' } }}/>
+        <ArtistList match={{ params: { name: 'Madonna' } }} />
       </MemoryRouter>
     );
 
@@ -33,7 +33,7 @@ describe('Artist list container with MockData and mock server interceptor', () =
 
     // determines if a list is showing up after loading screen finishes
     const theTestList = await screen.findByTestId('artistsTest');
-        
+
     return waitFor(() => {
       expect(theTestList).not.toBeEmptyDOMElement();
     });
