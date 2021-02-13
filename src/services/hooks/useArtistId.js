@@ -4,6 +4,7 @@ import { getReleasesByArtistId } from '../fetch';
 export const useArtistId = (id) => {
   const [loading, setLoading] = useState(true);
   const [releases, setReleases] = useState([]);
+  const [artistName, setArtistName] = useState('');
 
   useEffect(() => {
     getReleasesByArtistId(id)
