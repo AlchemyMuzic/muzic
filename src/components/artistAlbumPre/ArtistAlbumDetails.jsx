@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link, useParams } from 'react-router-dom';
-import imageError from '../imageError/imageError';
 
 export default function ArtistAlbumDetails({ releases }) {
   const { name } = useParams();
@@ -12,7 +11,7 @@ export default function ArtistAlbumDetails({ releases }) {
         <h2>{release.album}</h2>
         <img
           src={release.img}
-          alt="release.album"/>
+          alt="release.album" />
       </Link>
     </li>
   ));
