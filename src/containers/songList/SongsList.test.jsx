@@ -9,7 +9,7 @@ import { MemoryRouter } from 'react-router-dom';
 
 const server = setupServer(
   // eslint-disable-next-line max-len
-  rest.get('http://musicbrainz.org/ws/2/recording?release=79239441-bfd5-4981-a70c-55c3f15c1287&fmt=json', (req, res, ctx) => {
+  rest.get('https://musicbrainz.org/ws/2/recording?release=79239441-bfd5-4981-a70c-55c3f15c1287&fmt=json', (req, res, ctx) => {
     return res(ctx.json(songsRecordings));
   })
 );
@@ -19,12 +19,12 @@ describe('Artist Album Container with Mock Data and mock server interceptor', ()
   beforeAll(() => server.listen());
   afterAll(() => server.close());
 
-  it('displays a list of Madonna releases', async() => {
+  it('displays a list of Madonna releases', async () => {
     render(
       // mock router to check and see if we are rendering SongList
       <MemoryRouter>
         <SongsList
-          match={{ params:{ id:'79239441-bfd5-4981-a70c-55c3f15c1287' } }}
+          match={{ params: { id: '79239441-bfd5-4981-a70c-55c3f15c1287' } }}
         />
       </MemoryRouter>
     );
