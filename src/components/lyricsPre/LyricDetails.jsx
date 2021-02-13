@@ -2,10 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 export default function ArtistAlbumDetails({ lyrics }) {
-    console.log(lyrics);
-
   return (
-    <p  data-testid="lyricsTest">
+    <p data-testid="lyricsTest">
       {lyrics}
     </p>
   );
