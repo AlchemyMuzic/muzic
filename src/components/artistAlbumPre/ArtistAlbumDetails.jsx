@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link, useParams } from 'react-router-dom';
+import imageError from '../imageError/imageError';
 
 export default function ArtistAlbumDetails({ releases }) {
   const { name } = useParams();
@@ -10,7 +11,7 @@ export default function ArtistAlbumDetails({ releases }) {
       <Link to={`/songs/${release.release_id}/${name}`}>
         <h2>{release.album}</h2>
         <img
-          src={`http://coverartarchive.org/release/${release.release_id}/front`}
+          src={release.img}
           alt="release.album"/>
       </Link>
     </li>

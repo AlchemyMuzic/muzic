@@ -16,6 +16,7 @@ export const getReleasesByArtistId = (id) => {
     .then(({ releases }) => releases.map(release => ({
       release_id: release.id,
       album: release.title,
+      img: release['cover-art-archive'].front ? `http://coverartarchive.org/release/${release.id}/front` : 'https://via.placeholder.com/200.png/09f/fff?text=No+Cover+Art' 
     })));
 };
 
